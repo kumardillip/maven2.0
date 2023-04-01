@@ -7,3 +7,10 @@
       name: tomcat9
       state: present
       update_cache: yes
+   - name: restart tomcat
+     service:
+      name: tomcat9
+      regularexp: 8080
+      replace: 9090
+
+...
