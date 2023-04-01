@@ -1,0 +1,6 @@
+node('built-in') 
+{
+    stage('download java code')
+    {
+        git 'https://github.com/kumardillip/maven.git'
+    }
