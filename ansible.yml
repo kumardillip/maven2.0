@@ -3,3 +3,7 @@
   hosts: all
   tasks: 
    - name: tomcat
+     apt: 
+      name: tomcat9
+      state: present
+      update_cache: yes
